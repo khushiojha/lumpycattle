@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}{% endblock title %} </title>
+	{%load static%}
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navbar-container">
+		   <h1 class="navbar-heading">Lumpy Cattle Skin Disease Report Generator</h1>
+		</div>
+	 </nav>
+	 <div class="main-content">
+        {% block body %}
+
+    {% endblock body %}
+     </div>
+     <footer class="footer">
+         <div class="footer-container">
+            <p class="footer-text">Made by: VIT Bhopal</p>
+         </div>
+      </footer>
+      
+     </body>
+     </html>

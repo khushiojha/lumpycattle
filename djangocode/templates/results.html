@@ -1,0 +1,12 @@
+{% extends 'block.html' %}
+{% block title %}RESULTS{% endblock title %}
+{% block body %}
+    <div class="box-container-2">
+    <h1>Type of Disease Detected : {{ type }}</h1>
+    <img src="data:image/png;base64,{{ uploaded_img }}" alt="Uploaded Image">
+
+    <form action="/" method="get">
+        <button>Test Again</button>
+    </form>
+</div>
+{% endblock body %}
